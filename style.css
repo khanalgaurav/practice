@@ -16,8 +16,6 @@ nav img{
     width: 150px;
 }
 
-
-
 nav{
     display: flex;
     text-decoration: none;
@@ -53,3 +51,40 @@ nav{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+.textbox{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.visitbutton{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.visitbutton:hover{
+    border: 1px solid white;
+    background-color: red;
+    color:white;
+    transition:0.75s;
+}
+
+ 
