@@ -8,13 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
     <title>Garai saw hai</title>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="/img/bird logo.png" alt="logo"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -23,6 +27,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
 
         <div class="textbox">
@@ -33,5 +38,16 @@
         </div>
 
     </section>
+
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+        function showmenu(){
+            navLinks.style.right="0px";
+        }
+    </script>
+
 </body>
 </html>
