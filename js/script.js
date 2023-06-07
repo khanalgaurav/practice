@@ -9,8 +9,7 @@
 // alert("The file is working");
 window.addEventListener("scroll",function(){
     let navbar=document.getElementById("holdnav");
-    if(window.pageYOffset>=20){
-        console.log("hello....");
+    if(pageYOffset>=10){
         navbar.classList.add("sticky");
     }
     else{

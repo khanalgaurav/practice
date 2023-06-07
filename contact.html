@@ -34,21 +34,48 @@
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
-        <h1 id="aboutfix">About Us</h1>
+        <h1 id="aboutfix">Contact</h1>
     </section>
 
-    <!-----------------------about us page------------------------->
+<!-----------------------Contact us------------------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14125.897744348453!2d85.35923544667841!3d27.73350897711152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2snp!4v1686113520105!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <section class="about">
+    </section>
+    <section class="contact-us">
         <div class="row">
-            <div class="about-col">
-                <h1>Best Academy of the World</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed incidunt animi praesentium ducimus accusamus quidem eum distinctio culpa inventore, ex architecto voluptas quod cum exercitationem debitis ullam corrupti excepturi impedit!</br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum rerum unde labore officia repudiandae, maxime enim, excepturi dignissimos debitis ut ex quo exercitationem. Dicta architecto totam debitis qui</p>
-                <a href="#" class="visitbutton visiblebutton">Explore Now</a>
+            <div class="contact-col">
+                <div>
+                    <i class="bi bi bi-house-fill"></i>
+                    <span>
+                        <h5>xyz road, Gedagudee building</h5>
+                        <p>kapan,Kathmandu,Nepal</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="bi bi bi-phone-fill"></i>
+                    <span>
+                        <h5>+977 9843656766</h5>
+                        <p>Always available</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="bi bi bi-envelope-fill"></i>
+                    <span>
+                        <h5>info@gedagudee.com</h5>
+                        <p>Email for any query</p>
+                    </span>
+                </div>
             </div>
-            <div class="about-col">
-                <img src="img/trinity.jpg">
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name"  placeholder="Enter name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject"placeholder="Enter subject" required>
+                    <textarea name="message" placeholder="Message" rows="8" required></textarea>
+                    <button type="submit" class="visitbutton visiblebutton">Send Message</button>
+
+                </form>
             </div>
         </div>
     </section>
@@ -66,17 +93,6 @@
         </div>
         <p>First complete web project By Omayera</p>
     </section>
-
-
-    <!-- <script>
-        var navLinks= document.getElementById("navLinks");
-        function hidemenu(){
-            navLinks.style.right="-200px";
-        }
-        function showmenu(){
-            navLinks.style.right="0px";
-        }
-    </script> -->
 
 </body>
 </html>
